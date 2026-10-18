@@ -36,7 +36,7 @@ if uploaded_file is not None:
             total = df["Amount"].sum()
             average = df["Amount"].mean()
             highest = df["Amount"].max()
-            transactions_count=df['Date"].count()
+            transactions_count=df["Date"].count()
 
             st.subheader("📊 Expense Summary")
             c1, c2, c3 ,c4= st.columns(4)
