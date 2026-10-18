@@ -36,14 +36,12 @@ if uploaded_file is not None:
             total = df["Amount"].sum()
             average = df["Amount"].mean()
             highest = df["Amount"].max()
-            transactions_count=df["Date"].count()
 
             st.subheader("📊 Expense Summary")
-            c1, c2, c3 ,c4= st.columns(4)
+            c1, c2, c3 = st.columns(3)
             c1.metric("Total Expenses", f"₹{total:,.2f}")
             c2.metric("Average Expense", f"₹{average:,.2f}")
             c3.metric("Highest Expense", f"₹{highest:,.2f}")
-            c4.metric("Transactions", transaction_count)
 
 
             st.subheader("🥧 Expenses by Category")
